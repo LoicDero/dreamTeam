@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Team</title>
+    <script type="text/javascript" src="JS/js.js"></script>
+    <link rel="stylesheet" href="CSS/css.css">
+</head>
+<body>
+    <h1>Bienvenue dans votre constructeur d'équipe de rêve !</h1>
+    <form name="construction" onsubmit="return recup(this)">
+        <legend>ajouter un joueur à votre équipe</legend><br><br>
+        <label for="nom">Nom: </label>
+        <input type="text" name="nom" id="nom" required><br><br>
+
+        <label for="prénom">prénom: </label>
+        <input type="text" name="prenom" id="prenom" required><br><br>
+
+        <label for="age">Age : </label>
+        <input type="number" name="Age" min="16" max="45" id="age" required><br><br>
+
+        <label for="position"> Position : </label>
+        <select name="position" id="position" required>
+            <option value="BU">Buteur</option>
+            <option value="AG">Attaquant Gauche</option>
+            <option value="AD">Attaquant Droit</option>
+            <option value="MG">Milieu Gauche</option>
+            <option value="MD">Milieu Droit</option>
+            <option value="MOC">Milieu Offensif</option>
+            <option value="MC">Milieu Centre</option>
+            <option value="MDC">Milieu Défencif</option>
+            <option value="DG">Défenseur Gauche</option>
+            <option value="DC">Défenseur Centre</option>
+            <option value="DD">Défenseur Droite</option>
+            <option value="G">Gardien</option>
+        </select><br><br>
+
+        <label for="prix">Valeur actuel :</label>
+        <input type="number" name="prix" id="prix" required><label>(en Millions)</label><br><br>
+
+        <input type="submit" name="ajouter" value="ajouter"><br><br>
+    </form>
+
+
+    <section>
+        <table>
+            <thead>
+                
+                <tr> <th>Positions : </th>
+                     <th>Noms : </th>
+                     <th>Prénoms : </th>
+                    <th>Ages : </th>
+                    <th>Valeurs :  </th>
+                </tr>
+            </thead>
+            <tbody id="tableau">
+
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
